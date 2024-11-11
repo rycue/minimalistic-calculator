@@ -1,0 +1,133 @@
+html {
+    box-sizing: border-box;
+    --primary: #1a1A1A;
+    --line: #ced4da;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.calc-buttons-row {
+    display: flex;
+    justify-content: center;
+}
+
+.display input[type="text"] {
+    color: #495057;
+    width: 85%;
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-align: right;
+    border: none;
+    border-bottom: 0.2rem solid var(--line);
+    
+}
+
+#calculator {
+    padding: 1.75rem 0.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 1rem;
+    border: 0.3rem solid var(--line);
+}
+
+input[type="button"] {
+    min-width: 3rem;
+    min-height: 3rem;
+    font-size: 1.5rem;
+}
+
+input[type="button"].double {
+    min-width: 10.5rem;
+}
+
+
+.button {
+    display: inline-flex;
+	align-items: center;
+	font-size: 1rem;
+	padding: .5em .5em;
+	color: #495057;
+	background-color: #f1f3f5;
+	border-radius: 0.5em;
+	border: 0.1em solid #ced4da;
+	box-shadow: 0 4px #ced4da;
+	transition: all 0.05s;
+	user-select: none;
+	margin-bottom: 0.5em;
+	margin-right: 0.5em;  
+}
+
+.button-green {
+    display: inline-flex;
+	align-items: center;
+	font-size: 1rem;
+	padding: .5em .5em;
+	color: #495057;
+	background-color: rgb(132, 247, 132);
+	border-radius: 0.5em;
+	border: 0.1em solid #50c354;
+    box-shadow: 0 4px #35c33a;
+	transition: all 0.1s;
+	user-select: none;
+	margin-bottom: 0.5em;
+	margin-right: 0.5em;  
+}
+
+.button-green:focus,
+.button-green:hover {
+    background-color: #87ea7a;
+	outline: 2px #3bc219;
+}
+
+.button-green:active {
+    transform: translateY(4px);
+	box-shadow: none;
+}
+
+
+.button-red {
+    background-color: #f16d6d;
+    outline: 2px #c21919;
+    border: 0.1em solid #c35050;
+    box-shadow: 0 4px #c33535;
+    color: #fff;
+}
+
+
+.button:focus,
+.button:hover {
+    background-color: #e9ecef;
+	outline: 2px #1971c2;
+}
+
+.button-red:focus,
+.button-red:hover {
+    background-color: #f35f5f;
+    outline: 2px #c21919;
+}
+
+.button:active {
+    transform: translateY(4px);
+	box-shadow: none;
+}
+

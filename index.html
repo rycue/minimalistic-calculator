@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="calculator">
+            <div class="display">
+                <input type="text" id="result" readonly>
+            </div>
+            <div class="calc-buttons">
+                <div class="calc-buttons-row">
+                    <input class="button" type="button" value="7" onclick="dis(7)" onkeydown="myFunction(event)">
+                    <input class="button" type="button" value="8" onclick="dis(8)" onkeydown="myFunction(event)">
+                    <input class="button" type="button" value="9" onclick="dis(9)" onkeydown="myFunction(event)">
+                    <input class="button" type="button" value="C" onclick="clr()" onkeydown="myFunction(event)">
+                    <input class="button-red button" type="button" value="<" onclick="del()" onkeydown="myFunction(event)">
+                </div>
+                <div class="calc-buttons-row">
+                    <input class="button" type="button" value="4" onclick="dis(4)" onkeydown="myFunction(event)">
+                    <input class="button" type="button" value="5" onclick="dis(5)" onkeydown="myFunction(event)">
+                    <input class="button" type="button" value="6" onclick="dis(6)" onkeydown="myFunction(event)">
+                    <input class="button" type="button" value="&divide;" onclick="dis('/')" onkeydown="myFunction(event)">
+                    <input class="button" type="button" value="&times;" onclick="dis('*')" onkeydown="myFunction(event)">
+                </div>
+                
+                <div class="calc-buttons-row">
+                    <input class="button" type="button" value="1" onclick="dis(1)" onkeydown="myFunction(event)">
+                    <input class="button" type="button" value="2" onclick="dis(2)" onkeydown="myFunction(event)">
+                    <input class="button" type="button" value="3" onclick="dis(3)" onkeydown="myFunction(event)">
+                    <input class="button" type="button" value="&minus;" onclick="dis('-')" onkeydown="myFunction(event)">
+                    <input class="button" type="button" value="&plus;" onclick="dis('+')" onkeydown="myFunction(event)">
+                </div>
+                <div class="calc-buttons-row">
+                    <input class="button" type="button" value="." onclick="dis('.')" onkeydown="myFunction(event)">
+                    <input class="button" type="button" value="0" onclick="dis(0)" onkeydown="myFunction(event)">
+                    <input class="double button-green" type="button" value="&equals;" onclick="solve()" onkeydown="myFunction(event)">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
